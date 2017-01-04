@@ -3,11 +3,11 @@ Splunk Supporting Add-on which provides command to use erlangB calculation.
 
 Example:
 
-```| erlang field=traffic blocking_factor=0.001 result=trunks method=erlangb```
+```| stats count | eval traffic_field=47.759 | erlang field=traffic_field blocking_factor=0.01 result=trunks```
 
 ---
 
 Credits:
 
 * Splunk SDK: https://github.com/splunk/splunk-sdk-python
-* Python erlang function: https://github.com/natemara/python-erlang
+

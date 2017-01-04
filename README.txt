@@ -1,7 +1,9 @@
 # Splunk Addon - SA-erlangB
 Splunk Supporting Add-on which provides command to use erlangB calculation. 
 
-Example:
+More details about erlang: https://en.wikipedia.org/wiki/Erlang_(unit)
+
+Splunk search example:
 
 ```| stats count | eval traffic_field=47.759 | erlang field=traffic_field blocking_factor=0.01 result=trunks```
 

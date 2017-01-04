@@ -10,4 +10,5 @@ Example:
 Credits:
 
 * Splunk SDK: https://github.com/splunk/splunk-sdk-python
+* Icon: https://www.iconfinder.com/icons/1055102/calculation_calculator_math_mathematics_icon
 

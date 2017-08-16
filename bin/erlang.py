@@ -25,6 +25,8 @@ class ErlangCommand(StreamingCommand):
     def erlangb(self, usage, blocking):
         trunks = 0
         bounce_rate = 1
+        if usage <= 0:
+            return 0
         while bounce_rate > blocking:
             trunks += 1
             bounce_rate = self.elf(trunks,usage)

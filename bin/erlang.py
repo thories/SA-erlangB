@@ -4,7 +4,7 @@ from splunklib.searchcommands import dispatch, StreamingCommand, Configuration, 
 @Configuration(local=True)
 class ErlangCommand(StreamingCommand):
 
-    blocking_factor = Option(require=False, validate=validators.Float(), default=0.0001,doc='''
+    blocking_factor = Option(require=False, default=0.0001,doc='''
     **Syntax:** **blocking_factor=***<blocking_factor>*
         **Description:** define blocking factor to calculate number of lines needed''')
     field = Option(require=True, validate=validators.Fieldname(),doc='''
